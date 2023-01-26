@@ -7,15 +7,34 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Rock Paper Scissors</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <h1>Rock, Paper, Scissors Game</h1>
+        <p>Make your choice:</p>
+        <button id="rock"></button>
+        <button id="paper"></button>
+        <button id="scissors"></button>
+        <p id="result"></p>
+
+        <table>
+            <thead>
+                <tr>
+                <th>Round</th>
+                <th>You</th>
+                <th>Computer</th>
+                <th>Outcome</th>
+                </tr>
+            </thead>
+            <tbody id="scoreboard">
+            </tbody>
+        </table>
 
         <script src="js/index.js" async defer></script>
     </body>

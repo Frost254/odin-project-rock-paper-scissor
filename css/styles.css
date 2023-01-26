@@ -1,0 +1,103 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background: url("https://images.alphacoders.com/673/673328.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 50px;
+    color: beige;
+}
+
+body p {
+    color: beige;
+}
+
+button {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#rock {
+    background-image: url(https://images.unsplash.com/photo-1586114728914-c628021039d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJvY2slMjB3YWxscGFwZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+}
+
+#paper {
+    background-image: url(https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+}
+
+#scissors {
+    background-image: url(https://images.unsplash.com/photo-1567034866941-5acf937cb310?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNjaXNzb3JzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+table {
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+    background-color: beige;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #333;
+    color: #fff;
+}
+
+button:active {
+    animation: buttonClick 0.5s;
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 600px) {
+    button {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+}
